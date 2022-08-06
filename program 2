@@ -1,0 +1,108 @@
+/*Design a class named Account that contains:
+•A private int data field named id for the account (default 0).
+•A private double data field named balance for the account (default 500₹).
+•A  private  double  data  field  named  annual Interest Rate  that  stores  the  currentinterest rate (default 7%).
+Assume all accounts have the same interest rate.
+•A  private  Date  data  field  named  dateCreated  that  stores  the  date  when  theaccount was created.
+•A no-arg constructor that creates a default account.
+•A constructor that creates an account with the specified id and initial balance.
+•The accessor and mutator methods for id, balance, and annualInterestRate.
+•The accessor method for dateCreated.
+•A method named getMonthlyInterestRate() that returns the monthlyinterest rate.
+•A method named getMonthlyInterest() that returns the monthly interest.
+•A method named withdraw that withdraws a specified amount from the account.
+•A method named deposit that deposits aspecified amount to the account.*/
+import java.util.Scanner;
+public class Account
+  {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter id: ");
+        int id = sc.nextInt();
+        System.out.println("Enter balance: ");
+        double balance = sc.nextDouble();
+        System.out.println("Enter interest: ");
+        Double annualInterestRate = sc.nextDouble();
+        System.out.println("Enter withdraw: ");
+        Double withdraw = sc.nextDouble();
+        System.out.println("Enter deposit: ");
+        Double deposit = sc.nextDouble();
+
+    }   
+
+public class Account {
+         
+     private int id;
+    private double balance;
+    private double annualInterestRate;
+   private java.util.Date datecreated;        
+ 
+ Account()
+   {
+       id=0;
+       balance = 500;
+       annualInterestRate = 7;
+       datecreated Date = new java.util.datecreated;
+   }
+
+   public Account(int id i,double balance b)
+   {
+     id= i;
+     balance = b;
+   }
+    
+      public int getid(int newid)
+    {
+        return id;
+    }
+    public double getbalance(double newbalance)
+    {
+        return balance;
+    }
+    public void getannualInterestRate(double newAnnualInterestRate)
+    {
+        return annualInterestRate;
+    }
+    public void setid(int id)
+    {
+        id = new id;
+    }
+    public void setbalance(double balance)
+    {
+        balance  = new balance;
+    }
+    public void setannualInterestRate(double annualInterestRate)
+    {
+        annualInterestRate = new annualInteresRate;
+    }
+
+    public double getMonthlyInterestRate()
+    {
+        return (annualInterestRate/100)*12;
+    }
+    public double getMonthlyInterest()
+    {
+        return balance * getMonthlyInterestRate();
+    }
+      public void withdraw(double withdraw)
+      {
+        balance = balance - amount;
+      }
+      public void deposit(double deposit)
+      {
+        balance = balance + amount;
+      }
+      public java.util.datecreated;
+{
+    return datecreated;
+}
+public void getAccountdetailes() {
+    System.out.println("id : " + getId());
+    System.out.println("Balance : " + getBalance());
+    System.out.println("annualInterestRate : " + getAnnualInterestRate());
+    System.out.println("Monthly interest is : " + getMonthlyInterest());
+    System.out.println("This account was created at :  " + getDateCreated());
+}
+  }
+   }
