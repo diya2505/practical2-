@@ -1,0 +1,35 @@
+//Design a class named Circle containing following attributes and behavior.
+ //•Onedouble data field named radius.The default value is 1.
+ //•A no-argumentconstructor that creates a default circle.
+ //•A Single argument constructor that creates a Circle with the specified radius.
+ //•A method named getArea() that returns area of the Circle.
+ //•A method named getPerimeter() that returns perimeterof it.
+ class Circle
+ {
+   public static void main(String[] args) {
+      Circle c=new Circle(1);
+       double c1,c2;
+      c1=c.getArea();
+      c2=c.getPerimeter();
+      System.out.println(c1);
+      System.out.println(c2);
+   }
+private double radius;
+// Default Constructor
+public Circle()
+{  
+   radius = 1.0;
+}
+//Constructor with argument
+public Circle(double r)
+ {  
+   radius = r;
+}
+public double getArea() {
+   return 3.14*radius*radius;
+}
+public double getPerimeter()
+{
+   return 2*3.14*radius;
+}
+} 
